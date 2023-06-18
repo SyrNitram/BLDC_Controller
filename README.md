@@ -37,9 +37,13 @@ En s'inspirant d'un skateboard électrique nous avons pu avoir un ordre de grand
 Le contrôleur est conçu autour d'un DRV8323RS de chez TI. Il s'agit d'un pilote de grille de MOSFET intelligent et configurable en SPI. Les différents modes de contrôle simplifient le pilotage du moteur BLDC et évitent les erreurs pouvant causer des dommages à la carte. Les fonctions supplémentaires les plus utiles sont la gestion des courants de grille et des temps morts. La version que nous avons choisie intègre également trois amplificateurs différentiels qui nous permettent de mesurer le courant facilement, ainsi qu'un régulateur Buck.
 </p>
 
+
+
 <p align="center">	
 <img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/de5bca9e-0acd-4807-a2ce-c866d5b3d1c0">
 </p>
+
+
 
 <p align="justify">
 Le microcontrôleur gère le contrôle du moteur en faisant varier un rapport cyclique, on peut y programmer un contrôle en vitesse ou en position par exemple. La carte communique vers l'extérieur grâce à un bus CAN. Ce bus est robuste et ne sera pas perturbé par les éventuelles perturbations électromagnétiques générées par le moteur. Deux connecteurs permettent de chaîner facilement les cartes entre-elles. Il ne faut pas oublier les résistances de terminaisons qui sont primordiales pour le fonctionnement du bus CAN. La mesure de courant est réalisée à l'aide de 3 résistances de shunt de faible valeur dont les tensions à leurs bornes sont amplifiées par l'amplificateur du DRV8323. Cette tension amplifiée est ensuite lue par l'ADC du microcontrôleur. 
@@ -52,15 +56,7 @@ Le microcontrôleur gère le contrôle du moteur en faisant varier un rapport cy
 </div>
 
 
-<p align="center">
- 
-<img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/de7259f5-9df3-481a-a4ee-6529233a8884" >
 
-<img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/aeea6015-c81e-4267-8ce4-b2f76976af69">
-
-<img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/c2661d72-d13c-4ad0-9c08-9f6946fd94df">
-
-</p>
 
 ## Organisation du projet
 
@@ -85,3 +81,19 @@ Le microcontrôleur gère le contrôle du moteur en faisant varier un rapport cy
 		Datasheets composants
 		Design guides
 		Extrait de rapport de projet industriel
+
+
+## Annexes
+
+<p align="center">
+ 
+<img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/de7259f5-9df3-481a-a4ee-6529233a8884" >
+
+<img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/aeea6015-c81e-4267-8ce4-b2f76976af69">
+
+<img src="https://github.com/SyrNitram/BLDC_Controller/assets/71044010/c2661d72-d13c-4ad0-9c08-9f6946fd94df">
+
+</p>
+
+
+  
