@@ -3,7 +3,7 @@
 
 Tutoré par Laurent FIACK et Nicolas PAPAZOGLOU.
 
-Réalisé par Alex BADAOUI, Jérôme DUPOUTS, Hugo LECOZ, Etienne PARMENTIER et Martin RYS.
+Réalisé par Alex BADAOUI, Jérôme DUPOUTS, Hugo LE COZ, Etienne PARMENTIER et Martin RYS.
 </p>
 
 ![image](https://github.com/SyrNitram/BLDC_Controller/assets/71044010/296c8066-6a76-4669-9487-880f44aea552)
