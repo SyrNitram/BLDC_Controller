@@ -1,0 +1,4 @@
+10	784771220	22uH	3A	WE-PDA SMT Shielded Power Inductor			
+20	865080662019	330uF	50V	WCAP-ASLI Aluminum Electrolytic Capacitors	
+10	691352710003	3pins	CABLE	WR-TBL Series 3527 - 5.00 mm Vertical
+10	691311700003	3pins	PCB	WR-TBL Series 3117 - 5.00 mm Open Vertical PCB Header
