@@ -20,6 +20,8 @@ La mesure de courant est réalisée à l'aide de 3 résistances de shunt de faib
 
 Ce projet s'inscrit dans un projet plus ambitieux de plate-forme mobile lancé par M. Laurent FIACK. L'objectif à terme est de réaliser des plates-formes mobiles permettant à une personne équipée d'un casque Vr de pouvoir se déplacer dans l'espace sans jamais sortir de la zone de jeu réel. Ces plateformes seront également escamotables permettant de simuler un escalier pour le joueur par exemple. La première brique de ce projet est d'être capable de piloter des moteurs suffisamment puissants pour déplacer une personne et de manière assez précise pour éviter les accélérations brusques qui feraient chuter l'utilisateur. 
 
+En s'inspirant d'un skateboard électrique nous avons pu avoir un ordre de grandeur sur la puissance à fournir, et donc sur le dimensionnement des moteurs et du système. D'autant plus qu'ici la vitesse et l'accélération seront faibles et les mouvements ne seront pas prolongés.
+
 ## Organisation
 
 1-HARDWARE
