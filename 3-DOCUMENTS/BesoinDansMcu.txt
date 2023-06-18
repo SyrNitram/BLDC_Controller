@@ -1,0 +1,23 @@
+
+Pour valeur des capteurs à effet hall:
+    - 1 timer qui compte le temps entre deux mesures.
+    - Lire les 3 capteurs -> 3 GPIO.
+
+Pour mesurer le courant dans chaque branche du pont:
+    - 1 timer qui se déclenche toutes les 'resolution' ms.
+    - 3 petite resistances et calcul de la tension aux bornes. 3 I/O - entrée ADC
+    ou
+    - Utiliser le timer de la PWM, pour déclencher les mesures à chaque période de PWM.
+    - ADC et DMA pour les valeurs.
+    - filtrage, avec flottant c'est mieux.
+
+Configuration du driver:
+    - 1 liason SPI pour envoyer les paramétres au driver.
+
+Génération de la PWM:
+    - 1 compteur avec output-compare
+
+Au final, on va utiliser un compteur pour tout faire:
+    - Il va générer la PWM avec un seuil,
+    - Il va compter-décompter,
+    - Il va lancer des conversions à chaque fois qu'il arrive aux max-min,
